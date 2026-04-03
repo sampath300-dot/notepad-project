@@ -66,4 +66,7 @@ menu.add_cascade(label="View", menu=view_menu)
 
 view_menu.add_command(label="Toggle Dark Mode", command=toggle_dark_mode)
 
+root.bind("<Control-s>", lambda e: save_file())
+root.bind("<Control-o>", lambda e: open_file())
+root.bind("<Control-n>", lambda e: new_file())
 root.mainloop()
